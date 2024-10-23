@@ -1,8 +1,8 @@
-<<<<<<< HEAD
+
 const cacheName = "Hyero-TarotSui-1.0.1";// Change this version when you deploy a new build
-=======
-const cacheName = "Hyero-TarotSui-1.0";
->>>>>>> parent of 9dd3521 (Update version tracker)
+
+//const cacheName = "Hyero-TarotSui-1.0";
+
 const contentToCache = [
     "Build/SUIV2_TG_V0.1.loader.js",
     "Build/SUIV2_TG_V0.1.framework.js",
