@@ -1,9 +1,9 @@
 const cacheName = "Hyero-TarotSui-1.0";
 const contentToCache = [
-    "Build/NOSSO_DEMO.loader.js",
-    "Build/NOSSO_DEMO.framework.js",
-    "Build/NOSSO_DEMO.data",
-    "Build/NOSSO_DEMO.wasm",
+    "Build/SUIV2_TG_V0.1.loader.js",
+    "Build/SUIV2_TG_V0.1.framework.js",
+    "Build/SUIV2_TG_V0.1.data",
+    "Build/SUIV2_TG_V0.1.wasm",
     "TemplateData/style.css"
 
 ];
