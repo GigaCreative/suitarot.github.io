@@ -1,4 +1,4 @@
-const cacheName = "Hyero-TarotSui-1.0.2"; // Update this version when needed
+const cacheName = "Hyero-TarotSui-1.0.1"; // Update this version when needed
 const contentToCache = [
     "Build/SUIV2_TG_V1.01.loader.js",
     "Build/SUIV2_TG_V1.01.framework.js",
