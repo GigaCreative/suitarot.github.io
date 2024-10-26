@@ -1,11 +1,10 @@
-const cacheName = "Hyero-TarotSui-1.0.1";
+const cacheName = "Hyero-TarotSui-1.0.2"; // Update this version when needed
 const contentToCache = [
     "Build/SUIV2_TG_V1.01.loader.js",
     "Build/SUIV2_TG_V1.01.framework.js",
     "Build/SUIV2_TG_V1.01.data",
     "Build/SUIV2_TG_V1.01.wasm",
     "TemplateData/style.css"
-
 ];
 
 self.addEventListener('install', function (e) {
@@ -15,6 +14,25 @@ self.addEventListener('install', function (e) {
         const cache = await caches.open(cacheName);
         console.log('[Service Worker] Caching all: app shell and content');
         await cache.addAll(contentToCache);
+    })());
+});
+
+self.addEventListener('activate', function (e) {
+    console.log('[Service Worker] Activate');
+
+    e.waitUntil((async function () {
+        // Get all cache keys
+        const cacheKeys = await caches.keys();
+
+        // Delete caches that are not the current version
+        await Promise.all(
+            cacheKeys.map(key => {
+                if (key !== cacheName) {
+                    console.log(`[Service Worker] Deleting old cache: ${key}`);
+                    return caches.delete(key);
+                }
+            })
+        );
     })());
 });
 
