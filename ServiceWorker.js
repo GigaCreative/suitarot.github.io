@@ -1,9 +1,9 @@
-const cacheName = "Hyero-TarotSui-1.1.5(Stage)";
+const cacheName = "Hyero-TarotSui-1.1.6(Stage)";
 const contentToCache = [
-    "Build/ae1faa476d558833a55c47a98f90a40d.loader.js",
-    "Build/36c7f9c110ec868c45f05e5127d67b46.framework.js",
-    "Build/82ac84b0d77158a6664181ab6cd2d84d.data",
-    "Build/456667479cf125a5abba896efe09edb5.wasm",
+    "Build/18296075126650c5e1e9af3fdf377f55.loader.js",
+    "Build/974a9479788a57dbdb21902891d5524b.framework.js",
+    "Build/50265143163dc7f2b22b8c76aebb2335.data",
+    "Build/92d9970b4cb1410251fc50628c71e290.wasm",
     "TemplateData/style.css"
 
 ];
